@@ -41,6 +41,8 @@ body {
   justify-content: center;
   align-items: center;
   color: #fff;
+  width: 70%;
+  margin: 0 auto;
 }
 .contianer {
   border-radius: 1.5rem;
@@ -88,12 +90,17 @@ a {
   border: 1px solid var(--t-white);
   color: #fff;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 900px) {
   .grid {
     grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 0fr;
+    grid-template-columns: auto;
   }
   .contianer {
+    /* height: 100vh; */
+    /* max-height: max-content; */
+    overflow: visible;
+  }
+  .box {
   }
   body {
     display: grid;
